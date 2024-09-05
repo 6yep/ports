@@ -2,8 +2,8 @@ d:ratpoison
 d:libptytty
 d:rxvt-unicode
 d:tree
-f:7b311661555e666e7c4f129ea04ead79:ratpoison/.footprint
-f:f25cb98ba083d2b089fa28a89210bfe8:ratpoison/Pkgfile
+f:d68f045eb861f2919258db1887eae5db:ratpoison/.footprint
+f:a75825c85a5c17861c59146128bf5a03:ratpoison/Pkgfile
 f:5a5d31760dc1abe8b336526d472ac6cd:ratpoison/.signature
 f:00e63ca0ede87b6e76ce1d946677582f:libptytty/.footprint
 f:78e38dab4bae54380dfaf1145bacacb3:libptytty/Pkgfile
