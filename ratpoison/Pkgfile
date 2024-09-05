@@ -22,6 +22,7 @@ build () {
 	# make scripts executable
 	chmod a+x $PKG/usr/share/ratpoison/{rpws,*.sh,*.pl}
 
-	rm -rf $PKG/usr/share/doc/ratpoison
+	rm -rf $PKG/usr/share/doc
+	rm -rf $PKG/usr/share/info
 	rm -rf $PKG/usr/share/emacs
 }
