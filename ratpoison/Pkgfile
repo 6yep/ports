@@ -1,0 +1,27 @@
+# Description: ratpoison is a simple window manager with no fat library dependencies, no fancy graphics, no window decorations and no rodent dependence
+# URL: https://nongnu.org/ratpoison
+# Maintainer: deadfysh, deadfysh at protonmail dot com
+# Depends on: xorg-libxinerama xorg-libxtst xorg-libxft xorg-libxrandr texinfo 
+
+name=ratpoison
+version=1.4.9
+release=1
+source=(https://download.savannah.gnu.org/releases/ratpoison/$name-$version.tar.xz)
+
+build () {
+	cd $name-$version
+
+	./configure \
+		--prefix=/usr \
+		--with-xterm=urxvt \
+		--disable-mdoc
+
+	make
+	DESTDIR=$PKG make install
+
+	# make scripts executable
+	chmod a+x $PKG/usr/share/ratpoison/{rpws,*.sh,*.pl}
+
+	rm -rf $PKG/usr/share/doc/ratpoison
+	rm -rf $PKG/usr/share/emacs
+}
