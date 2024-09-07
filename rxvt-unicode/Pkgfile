@@ -21,7 +21,8 @@ build () {
 		--enable-256-color \
 		--enable-xft \
 		--enable-font-styles \
-		--enable-unicode3
+		--enable-unicode3 \
+		--enable-selection
 
 	mkdir -p $PKG/usr/share/terminfo
 
