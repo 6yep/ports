@@ -1,0 +1,13 @@
+# Description: A bitmap programming font optimized for coziness
+# URL: https://github.com/slavfox/Cozette
+# Maintainer: deadfysh, deadfysh at protonmail dot com
+# Depends on: fontconfig xorg-mkfontscale
+
+name=bdf-cozette
+version=1.25.1
+release=1
+source=(https://github.com/slavfox/Cozette/releases/download/v.$version/cozette.bdf)
+
+build () {
+	install -Dm644 cozette.bdf -t $PKG/usr/share/fonts/bdf
+}
