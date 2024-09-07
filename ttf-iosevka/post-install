@@ -1,0 +1,8 @@
+#! /bin/bash
+
+FONTDIR=/usr/share/fonts/ttf
+
+fc-cache -f
+mkfontdir $FONTDIR
+mkfontscale $FONTDIR
+
