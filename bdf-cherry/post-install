@@ -1,0 +1,8 @@
+#! /bin/bash
+
+FONTDIR=/usr/share/fonts/bdf
+
+fc-cache -f
+mkfontdir $FONTDIR
+mkfontscale $FONTDIR
+
