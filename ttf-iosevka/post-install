@@ -2,7 +2,6 @@
 
 FONTDIR=/usr/share/fonts/ttf
 
-fc-cache -f
 mkfontdir $FONTDIR
 mkfontscale $FONTDIR
-
+fc-cache -f
