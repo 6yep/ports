@@ -1,6 +1,7 @@
 # Description: Envypn is a pcf font inspired by Envy Code R
 # URL: https://ywstd.fr/files/p/envypn-font
 # Maintainer: deadfysh, deadfysh at protonmail dot com
+# Depends on: xorg-mkfontscale
 
 name=envypn-font
 version=1.7.1
