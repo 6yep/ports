@@ -1,0 +1,15 @@
+# Description: Envypn is a pcf font inspired by Envy Code R
+# URL: https://ywstd.fr/files/p/envypn-font
+# Maintainer: deadfysh, deadfysh at protonmail dot com
+
+name=envypn-font
+version=1.7.1
+release=1
+source=(https://framagit.org/Ypnose/ypnose.frama.io/-/raw/master/files/p/$name/$name-$version.tar.gz)
+
+build () {
+	cd $name-$version
+
+	install -d $PKG/usr/share/fonts/pcf
+	install -m644 *.pcf.gz $PKG/usr/share/fonts/pcf
+}
