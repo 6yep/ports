@@ -12,9 +12,9 @@ build () {
 	cd $name-$version
 
 	./autogen.sh
-	./configure
+	./configure --prefix=/usr
 	make
 	DESTDIR=$PKG make install
 
-	rm -rf $PKG/usr/local/share/doc/scrot
+	rm -rf $PKG/usr/share/doc/scrot
 }
