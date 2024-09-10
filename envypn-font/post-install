@@ -1,7 +1,0 @@
-#! /bin/bash
-
-FONTDIR=/usr/share/fonts/pcf
-
-mkfontdir $FONTDIR
-mkfontscale $FONTDIR
-fc-cache -f
