@@ -1,0 +1,20 @@
+# Description: SCReenshOT - command line screen capture utility
+# URL: SCReenshOT - command line screen capture utility
+# Maintainer: deadfysh, deadfysh at protonmail dot com
+# Depends on: autoconf-archive imlib2 xorg-libx11 xorg-libxcomposite xorg-libxext xorg-libxfixes xorg-libxinerama
+
+name=scrot
+version=1.11.1
+release=1
+source=(https://github.com/resurrecting-open-source-projects/$name/releases/download/$version/$name-$version.tar.gz)
+
+build () {
+	cd $name-$version
+
+	./autogen.sh
+	./configure
+	make
+	DESTDIR=$PKG make install
+
+	rm -rf $PKG/usr/local/share/doc/scrot
+}
