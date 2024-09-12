@@ -1,0 +1,3 @@
+Add the OpenAI API key to your shell profile by adding this line
+
+`export OPENAI_KEY=<api-key>`
