@@ -1,5 +1,4 @@
 d:ratpoison
-d:chatgpt-shell-cli
 d:jq
 d:libptytty
 d:rxvt-unicode
@@ -8,10 +7,6 @@ d:scrot
 f:d68f045eb861f2919258db1887eae5db:ratpoison/.footprint
 f:a75825c85a5c17861c59146128bf5a03:ratpoison/Pkgfile
 f:5a5d31760dc1abe8b336526d472ac6cd:ratpoison/.signature
-f:fa3500fd4f6b408352da5ca3d6646a58:chatgpt-shell-cli/README
-f:653dbaae19612a98cc07f0021c9e9c32:chatgpt-shell-cli/.footprint
-f:c8f4a7c7a38ff85f4c7d70ac2dd7eef2:chatgpt-shell-cli/Pkgfile
-f:5a5d31760dc1abe8b336526d472ac6cd:chatgpt-shell-cli/.signature
 f:f8969ac84554eda49420957e2fe8ac76:jq/.footprint
 f:93887391f51b16a6152cecc9c77fbaca:jq/Pkgfile
 f:5a5d31760dc1abe8b336526d472ac6cd:jq/.signature
