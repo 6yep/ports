@@ -1,0 +1,7 @@
+drwxr-xr-x	deadfysh/deadfysh	usr/
+drwxr-xr-x	deadfysh/deadfysh	usr/bin/
+-rwxr-xr-x	deadfysh/deadfysh	usr/bin/lemonbar
+drwxr-xr-x	deadfysh/deadfysh	usr/share/
+drwxr-xr-x	deadfysh/deadfysh	usr/share/man/
+drwxr-xr-x	deadfysh/deadfysh	usr/share/man/man1/
+-rw-r--r--	deadfysh/deadfysh	usr/share/man/man1/lemonbar.1.gz
