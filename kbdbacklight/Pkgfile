@@ -5,7 +5,7 @@
 name=kbdbacklight
 version=1.1
 release=1
-source=(https://github.com/deadfysh/${name}/archive/refs/tags/v${version}.tar.gz)
+source=(https://github.com/deadfysh/${name}/archive/v${version}/${name}-v${version}.tar.gz)
 
 build () {
 	cd $name-$version
