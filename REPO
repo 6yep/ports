@@ -2,6 +2,7 @@ d:ratpoison
 d:jq
 d:libptytty
 d:glm
+d:feh
 d:rxvt-unicode
 d:tree
 d:slop
@@ -22,6 +23,9 @@ f:5a5d31760dc1abe8b336526d472ac6cd:libptytty/.signature
 f:9e8c2934eaf0e19ac4f2b7c925c324f7:glm/.footprint
 f:6dd645fc419f5359bea97301b95dab95:glm/Pkgfile
 f:5a5d31760dc1abe8b336526d472ac6cd:glm/.signature
+f:307191851ba9faaf8e7ccdf819a8d6a5:feh/.footprint
+f:321ee8f3877e3a1d42865ebb2d864719:feh/Pkgfile
+f:5a5d31760dc1abe8b336526d472ac6cd:feh/.signature
 f:adbc706ffaae32ebc5d2669e47231c20:rxvt-unicode/.footprint
 f:9fa70c76c74a98a0a653c7d112030ef4:rxvt-unicode/Pkgfile
 f:5a5d31760dc1abe8b336526d472ac6cd:rxvt-unicode/.signature
