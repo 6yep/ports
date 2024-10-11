@@ -1,0 +1,24 @@
+# Description: A command line tool to identify a pixel color on an X window.
+# URL: https://github.com/muquit/grabc
+# Maintainer: deadfysh, deadfysh at protonmail dot com
+# Depends on: xorg-libx11
+
+name=grabc
+version=1.0.2
+release=1
+source=(https://github.com/muquit/${name}/archive/v${version}/${name}-v${version}.tar.gz)
+
+build () {
+	cd $name-$version
+
+	mkdir -p $PKG/usr/local/bin
+	mkdir -p $PKG/usr/local/share/man/man1
+
+	make
+	make DESTDIR=$PKG install-bin
+	make DESTDIR=$PKG install-man
+
+	cp -r $PKG/usr/local/bin $PKG/usr
+	cp -r $PKG/usr/local/share $PKG/usr
+	rm -rf $PKG/usr/local
+}
