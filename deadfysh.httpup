@@ -1,9 +1,0 @@
-#
-# /etc/ports/deadfysh.httpup: deadfysh's port collection
-#
-
-ROOT_DIR=/usr/ports/deadfysh
-URL=https://raw.githubusercontent.com/deadfysh/ports/master
-
-# End of file
-
