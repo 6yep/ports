@@ -1,6 +1,6 @@
 # Description: C++ mathematics library for graphics software based on the OpenGL Shading Language (GLSL) specifications.
 # URL: https://github.com/g-truc/glm
-# Maintainer: worldoverride, worldoverride at protonmail dot com
+# Maintainer: cavekid, cavekid at protonmail dot com
 
 name=glm
 version=1.0.1

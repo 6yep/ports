@@ -1,9 +1,0 @@
-#
-# /etc/ports/worldoverride.httpup: worldoverride's port collection
-#
-
-ROOT_DIR=/usr/ports/worldoverride
-URL=https://raw.githubusercontent.com/worldoverride/ports/master
-
-# End of file
-

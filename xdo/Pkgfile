@@ -1,6 +1,6 @@
 # Description: Small X utility to perform elementary actions on windows 
 # URL: https://github.com/baskerville/xdo
-# Maintainer: worldoverride, worldoverride at protonmail dot com
+# Maintainer: cavekid, cavekid at protonmail dot com
 # Depends on: xorg-libxcb xorg-xcb-util-wm
 
 name=xdo

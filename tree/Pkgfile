@@ -1,6 +1,6 @@
 # Description: A recursive directory listing command that produces a depth indented listing of files
 # URL: http://oldmanprogrammer.net/source.php?dir=projects/tree
-# Maintainer: worldoverride, worldoverride at protonmail dot com
+# Maintainer: cavekid, cavekid at protonmail dot com
 
 name=tree
 version=2.1.3
