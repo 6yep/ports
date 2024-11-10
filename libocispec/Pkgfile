@@ -1,0 +1,36 @@
+# Description: a C library for accessing OCI runtime and image spec files 
+# URL: https://github.com/containers/libocispec
+# Maintainer: cavekid, cavekid at protonmail dot com
+# Depends on: yajl git
+
+name=libocispec
+version=git
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name; then
+		git fetch -q
+		git reset --hard origin/main
+	else
+		git clone https://github.com/containers/$name $name
+		cd $name
+	fi
+
+	./autogen.sh
+	./configure \
+		--prefix=/usr \
+		--enable-libocispec-install
+
+	make
+
+	# fix expected libtool archive missing by creating a dummy
+	touch .libs/libocispec.lai
+
+	make DESTDIR=$PKG PREFIX=/usr install
+
+	# delete dummy libtool archive
+	rm $PKG/usr/lib/*.la
+}
