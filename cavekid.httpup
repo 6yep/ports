@@ -1,9 +1,0 @@
-#
-# /etc/ports/cavekid.httpup: cavekid's port collection
-#
-
-ROOT_DIR=/usr/ports/cavekid
-URL=https://raw.githubusercontent.com/cavekid/ports/master
-
-# End of file
-

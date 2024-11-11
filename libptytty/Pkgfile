@@ -1,6 +1,6 @@
 # Description: libptytty is an offspring of rxvt-unicode that handles pty/tty/utmp/wtmp/lastlog handling in mostly OS-independent ways
 # URL: http://software.schmorp.de/pkg/libptytty.html
-# Maintainer: cavekid, cavekid at protonmail dot com
+# Maintainer: skelettz, skelettz at protonmail dot com
 
 name=libptytty
 version=2.0

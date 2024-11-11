@@ -1,6 +1,6 @@
 # Description: A featherweight, lemon-scented, bar based on xcb 
 # URL: https://github.com/LemonBoy/bar
-# Maintainer: cavekid, cavekid at protonmail dot com
+# Maintainer: skelettz, skelettz at protonmail dot com
 # Depends on: xorg-libxcb
 
 name=lemonbar
