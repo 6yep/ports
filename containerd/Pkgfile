@@ -1,0 +1,27 @@
+# Description: an open and reliable container runtime
+# URL: https://containerd.io/
+# Maintainer: cavekid, cavekid at protonmail dot com
+# Depends on: libseccomp btrfs-progs git go
+
+name=containerd
+version=v2.0.0
+release=1
+source=()
+
+build() {
+	cd $PKGMK_SOURCE_DIR
+
+	if cd $name-$version; then
+		git fetch -q
+		git reset --hard $version
+	else
+		git clone --branch $version https://github.com/containerd/$name $name-$version
+		cd $name-$version
+	fi
+
+	make
+
+    install -d -m 0755 $PKG/usr/bin
+    install -m 0755 bin/* $PKG/usr/bin/
+}
+
