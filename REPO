@@ -1,6 +1,5 @@
 d:ratpoison
 d:cgroupfs-mount
-d:docker
 d:jq
 d:libptytty
 d:go
@@ -19,10 +18,7 @@ f:d2645f2f20ea1352175cc56dd0f026bb:ratpoison/Pkgfile
 f:5a5d31760dc1abe8b336526d472ac6cd:ratpoison/.signature
 f:461e73c28820db4df53a661e6049bed4:cgroupfs-mount/.footprint
 f:7e383543d54c5940c60cfbf9eed8b008:cgroupfs-mount/Pkgfile
-f:b682e7486022181a312c30c166123c7b:cgroupfs-mount/.signature
-f:85624c81a2a472032988e9bd6ce0efd7:docker/.footprint
-f:47b3813b5e83fe84cf19df3f27c7be0f:docker/Pkgfile
-f:204e95dec486353c76b5a2f90d4ff034:docker/.signature
+f:204e95dec486353c76b5a2f90d4ff034:cgroupfs-mount/.signature
 f:f8969ac84554eda49420957e2fe8ac76:jq/.footprint
 f:6bb132bc593ed0ec234c44517f7c4c3e:jq/Pkgfile
 f:5a5d31760dc1abe8b336526d472ac6cd:jq/.signature
@@ -47,7 +43,7 @@ f:5a5d31760dc1abe8b336526d472ac6cd:tree/.signature
 f:24c9021cc393d601f0e42bf468619a83:slop/.footprint
 f:8bb6f29761c2cb8b0794fbd697f6076c:slop/Pkgfile
 f:5a5d31760dc1abe8b336526d472ac6cd:slop/.signature
-f:7d3abe171fe38b2518305881ccf391f6:skelettz.httpup
+f:b4e97d82b1139f659f7975f027782ac0:skelettz.httpup
 f:be6f016669919c53b11b08e8580abac7:xdo/.footprint
 f:52051e35ce8931b5ceb70b036b668d79:xdo/Pkgfile
 f:5a5d31760dc1abe8b336526d472ac6cd:xdo/.signature
