@@ -21,7 +21,7 @@ f:461e73c28820db4df53a661e6049bed4:cgroupfs-mount/.footprint
 f:7e383543d54c5940c60cfbf9eed8b008:cgroupfs-mount/Pkgfile
 f:204e95dec486353c76b5a2f90d4ff034:cgroupfs-mount/.signature
 f:43b23869a150e04e1e68c97985a4bf77:docker/.footprint
-f:00df02cd16d53ed833b138ae36f21a07:docker/Pkgfile
+f:6ae8660c959b54c235f78d9967c8ebd1:docker/Pkgfile
 f:204e95dec486353c76b5a2f90d4ff034:docker/.signature
 f:e5985f351c1ae55777f9fcb5ff10335d:docker/docker.rc
 f:8261569581474c8f27f1e930c5e22e59:docker/pre-install
