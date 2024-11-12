@@ -1,7 +1,7 @@
 # Description: a platform to build, share and run container applications
 # URL: https://docker.com
 # Maintainer: skelettz, skelettz at protonmail dot com
-# Depends on: libseccomp git go cgroupfs-mount
+# Depends on: libseccomp btrfs-progs git go cgroupfs-mount
 
 name=docker
 version=v27.3.1
@@ -10,7 +10,7 @@ source=($name.rc)
 
 build() {
 	export GOPATH=$SRC
-	export DOCKER_BUILDTAGS="seccomp no_systemd exclude_graphdriver_btrfs exclude_graphdriver_devicemapper"
+	export DOCKER_BUILDTAGS="seccomp no_systemd"
 
 	cd $PKGMK_SOURCE_DIR
 
