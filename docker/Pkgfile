@@ -10,7 +10,7 @@ source=($name.rc)
 
 build() {
 	export GOPATH=$SRC
-	export GOCACHE=$SRC/go-build
+	export GOCACHE=$PKGMK_SOURCE_DIR/go-build
 
 	export DOCKER_BUILDTAGS="seccomp no_systemd exclude_graphdriver_btrfs exclude_graphdriver_devicemapper"
 
