@@ -4,7 +4,7 @@
 # Depends on: libseccomp btrfs-progs git go cgroupfs-mount
 
 name=docker
-version=v27.3.1
+version=27.3.1
 release=1
 source=($name.rc)
 
@@ -16,9 +16,9 @@ build() {
 
 	if cd $name-$version; then
 		git fetch -q
-		git reset --hard $version
+		git reset --hard v$version
 	else
-		git clone --branch $version https://github.com/moby/moby $name-$version
+		git clone --branch v$version https://github.com/moby/moby $name-$version
 		cd $name-$version
 	fi
 
@@ -33,7 +33,7 @@ build() {
 
 	# install
 	
-	hack/make.sh dynbinary
+	VERSION=$version hack/make.sh dynbinary
 
 	install -D -m 0755 bundles/dynbinary-daemon/dockerd $PKG/usr/bin/dockerd
 	install -D -m 0755 bundles/dynbinary-daemon/docker-proxy $PKG/usr/bin/docker-proxy
