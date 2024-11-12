@@ -10,8 +10,6 @@ source=($name.rc)
 
 build() {
 	export GOPATH=$SRC
-	export GOCACHE=off
-
 	export DOCKER_BUILDTAGS="seccomp no_systemd exclude_graphdriver_btrfs exclude_graphdriver_devicemapper"
 
 	cd $PKGMK_SOURCE_DIR
