@@ -1,0 +1,19 @@
+# Description: use any linux distribution inside your terminal
+# URL: https://distrobox.it
+# Maintainer: skelettz, skelettz at protonmail dot com
+# Depends on: docker lilipod
+
+name=distrobox
+version=1.8.0
+release=1
+source=(https://github.com/89luca89/$name/archive/$version/$name-$version.tar.gz $name.conf)
+
+build () {
+	cd $name-$version
+
+	./install --prefix $PKG/usr
+
+	install -Dm0644 $SRC/$name.conf $PKG/etc/$name/$name.conf
+
+	rm -rf $PKG/usr/share/{icons,zsh,bash-completion}
+}
