@@ -9,6 +9,7 @@ d:feh
 d:rxvt-unicode
 d:tree
 d:slop
+d:lilipod
 d:xdo
 d:scrot
 d:grabc
@@ -49,6 +50,9 @@ f:5a5d31760dc1abe8b336526d472ac6cd:tree/.signature
 f:24c9021cc393d601f0e42bf468619a83:slop/.footprint
 f:8bb6f29761c2cb8b0794fbd697f6076c:slop/Pkgfile
 f:5a5d31760dc1abe8b336526d472ac6cd:slop/.signature
+f:b3868ee312213bb5318603041d7c06a5:lilipod/.footprint
+f:86bf9c946481408dc5819dc514e75c4d:lilipod/Pkgfile
+f:204e95dec486353c76b5a2f90d4ff034:lilipod/.signature
 f:b4e97d82b1139f659f7975f027782ac0:skelettz.httpup
 f:be6f016669919c53b11b08e8580abac7:xdo/.footprint
 f:52051e35ce8931b5ceb70b036b668d79:xdo/Pkgfile
