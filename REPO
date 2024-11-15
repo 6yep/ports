@@ -3,6 +3,7 @@ d:cgroupfs-mount
 d:docker
 d:jq
 d:libptytty
+d:distrobox
 d:go
 d:glm
 d:feh
@@ -32,6 +33,10 @@ f:5a5d31760dc1abe8b336526d472ac6cd:jq/.signature
 f:00e63ca0ede87b6e76ce1d946677582f:libptytty/.footprint
 f:271e21bb08f8b9dc592706add70ec42a:libptytty/Pkgfile
 f:5a5d31760dc1abe8b336526d472ac6cd:libptytty/.signature
+f:330b81a26cbc4e403fe789565ebc9aef:distrobox/.footprint
+f:f2392d807d82be28ec86215106a05c96:distrobox/Pkgfile
+f:204e95dec486353c76b5a2f90d4ff034:distrobox/.signature
+f:ef433868d8a4641b7fa77b06f4f482bf:distrobox/distrobox.conf
 f:1c49e3034e07ed134c5d9532dc57b0ea:go/.footprint
 f:6566e48649ebf413e941a778757274ef:go/Pkgfile
 f:b682e7486022181a312c30c166123c7b:go/.signature
