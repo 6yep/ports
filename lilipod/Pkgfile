@@ -1,0 +1,19 @@
+# Description: a simple OCI container manager
+# URL: https://github.com/89luca89/lilipod
+# Maintainer: skelettz, skelettz at protonmail dot com
+
+name=lilipod
+version=0.0.3
+release=1
+source=(https://github.com/89luca89/$name/archive/v$version/$name-v$version.tar.gz)
+
+build () {
+	export GOPATH=$SRC
+
+	cd $name-$version
+
+	make pty
+	make $name
+
+	install -Dm755 $name $PKG/usr/bin/$name
+}
