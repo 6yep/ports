@@ -1,9 +1,0 @@
-#
-# /etc/ports/skelettz.httpup: skelettz's port collection
-#
-
-ROOT_DIR=/usr/ports/skelettz
-URL=https://raw.githubusercontent.com/skelettz/ports/main
-
-# End of file
-

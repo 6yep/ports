@@ -1,6 +1,6 @@
 # Description: use any linux distribution inside your terminal
 # URL: https://distrobox.it
-# Maintainer: skelettz, skelettz at protonmail dot com
+# Maintainer: eigengeist, eigengeist at protonmail dot com
 # Depends on: docker lilipod
 
 name=distrobox
