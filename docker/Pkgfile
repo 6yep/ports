@@ -1,6 +1,6 @@
 # Description: a platform to build, share and run container applications
 # URL: https://docker.com
-# Maintainer: eigengeist, eigengeist at protonmail dot com
+# Maintainer: tbsty, tbsty at protonmail dot com
 # Depends on: libseccomp btrfs-progs git go cgroupfs-mount
 
 name=docker

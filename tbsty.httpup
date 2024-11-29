@@ -1,0 +1,9 @@
+#
+# /etc/ports/tbsty.httpup: tbsty's port collection
+#
+
+ROOT_DIR=/usr/ports/tbsty
+URL=https://raw.githubusercontent.com/tbsty/ports/main
+
+# End of file
+

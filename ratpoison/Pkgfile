@@ -1,6 +1,6 @@
 # Description: ratpoison is a simple window manager with no fat library dependencies, no fancy graphics, no window decorations and no rodent dependence
 # URL: https://nongnu.org/ratpoison
-# Maintainer: eigengeist, eigengeist at protonmail dot com
+# Maintainer: tbsty, tbsty at protonmail dot com
 # Depends on: xorg-libxinerama xorg-libxtst xorg-libxft xorg-libxrandr texinfo 
 
 name=ratpoison

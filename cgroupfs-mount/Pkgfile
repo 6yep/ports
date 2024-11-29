@@ -1,6 +1,6 @@
 # Description: scripts to mount the cgroupfs hierarchy
 # URL: https://github.com/tianon/cgroupfs-mount
-# Maintainer: eigengeist, eigengeist at protonmail dot com
+# Maintainer: tbsty, tbsty at protonmail dot com
 
 name=cgroupfs-mount
 version=1.4

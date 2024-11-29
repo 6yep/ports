@@ -1,11 +1,11 @@
 # Description: Adjust keyboard backlight brightness using sysfs.
-# URL: https://github.com/eigengeist/kbdbacklight
-# Maintainer: eigengeist, eigengeist at protonmail dot com
+# URL: https://github.com/tbsty/kbdbacklight
+# Maintainer: tbsty, tbsty at protonmail dot com
 
 name=kbdbacklight
 version=1.2
 release=1
-source=(https://github.com/eigengeist/${name}/archive/v${version}/${name}-v${version}.tar.gz)
+source=(https://github.com/tbsty/${name}/archive/v${version}/${name}-v${version}.tar.gz)
 
 build () {
 	cd $name-$version

@@ -1,6 +1,6 @@
 # Description: a simple OCI container manager
 # URL: https://github.com/89luca89/lilipod
-# Maintainer: eigengeist, eigengeist at protonmail dot com
+# Maintainer: tbsty, tbsty at protonmail dot com
 
 name=lilipod
 version=0.0.3
