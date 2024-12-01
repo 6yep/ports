@@ -1,0 +1,5 @@
+#! /bin/bash
+
+modprobe -r nouveau
+modprobe nvidia "NVreg_DynamicPowerManagement=0x02"
+
