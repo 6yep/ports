@@ -43,7 +43,7 @@ f:12026de683d4189394c3286f99c45543:cuda/Pkgfile
 f:5a459a837ff0e1220dda938190c083f7:cuda/.signature
 f:815aa9902ea74484c319c3d0a55661d9:cuda/.footprint
 f:4d6d4ca3ad7671a47c8b98136b2b1c4a:cuda/post-install
-f:5567dbcb87d65bbe5c3fcf170cf3a59c:cuda/cuda-profile.d.sh
+f:476f6b5aef16f9dc74e5847520e82e2e:cuda/cuda-profile.d.sh
 f:0a6053165086ae1dcd92e5bff7c1f199:lilipod/Pkgfile
 f:5a459a837ff0e1220dda938190c083f7:lilipod/.signature
 f:b3868ee312213bb5318603041d7c06a5:lilipod/.footprint
