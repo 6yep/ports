@@ -68,7 +68,7 @@ f:5a459a837ff0e1220dda938190c083f7:docker/.signature
 f:b34c049df8d46de18ca77b6e0534a658:docker/docker.rc
 f:43b23869a150e04e1e68c97985a4bf77:docker/.footprint
 f:8261569581474c8f27f1e930c5e22e59:docker/pre-install
-f:d56362ab8e141d82f84ba914000421cb:nvidia/Pkgfile
+f:b481a9f16988901b1f224d5c08049ee5:nvidia/Pkgfile
 f:240d4bffe09d54ef337b1a2695aa2432:nvidia/nvidia-persistenced.rc
 f:5a459a837ff0e1220dda938190c083f7:nvidia/.signature
 f:9039b819cb09373c7ba1767514529f58:nvidia/nvidia-powerd.rc
@@ -76,7 +76,7 @@ f:d02b8d32c02b2bccff34a979b27771fe:nvidia/.footprint
 f:4511024cc556d0c6e7c467b6789524e2:nvidia/90-nvidia-uvm.rules
 f:d179336ed9a8829f895284a59f96e9d7:nvidia/post-install
 f:4875e4b2dcc52fb780fb9a65785cd08d:nvidia/80-nvidia-pm.rules
-f:4967489317e7e1e0871c5c173138dd11:nvidia/nvidia-modprobe.conf
+f:4967489317e7e1e0871c5c173138dd11:nvidia/nvidia-modprobe.d.conf
 f:a177696cd011ebbb892ac7a407f6a8e4:feh/Pkgfile
 f:5a459a837ff0e1220dda938190c083f7:feh/.signature
 f:307191851ba9faaf8e7ccdf819a8d6a5:feh/.footprint
