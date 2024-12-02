@@ -68,7 +68,7 @@ f:5a459a837ff0e1220dda938190c083f7:docker/.signature
 f:b34c049df8d46de18ca77b6e0534a658:docker/docker.rc
 f:43b23869a150e04e1e68c97985a4bf77:docker/.footprint
 f:8261569581474c8f27f1e930c5e22e59:docker/pre-install
-f:b481a9f16988901b1f224d5c08049ee5:nvidia/Pkgfile
+f:36d98b76d9e937e15c827c7deb18d67a:nvidia/Pkgfile
 f:240d4bffe09d54ef337b1a2695aa2432:nvidia/nvidia-persistenced.rc
 f:5a459a837ff0e1220dda938190c083f7:nvidia/.signature
 f:9039b819cb09373c7ba1767514529f58:nvidia/nvidia-powerd.rc
