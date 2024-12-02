@@ -21,7 +21,7 @@ build() {
 	install -d $PKG/usr/bin
 	install -d $PKG/usr/lib
 
-	# X driver and GLX extension
+	# X/GLX
 
 	install -d $PKG/usr/lib/xorg/modules/{drivers,extensions}
 	install -m 0755 nvidia_drv.so $PKG/usr/lib/xorg/modules/drivers/
@@ -30,7 +30,7 @@ build() {
 	ln -s libglxserver_nvidia.so.$version $PKG/usr/lib/nvidia/xorg/libglxserver_nvidia.so
 	ln -s libglxserver_nvidia.so.$version $PKG/usr/lib/nvidia/xorg/libglxserver_nvidia.so.1
 
-	# EGL and OpenGL ES libraries and config
+	# EGL/OpenGL ES
 
 	install -m 0755 libGLESv1_CM_nvidia.so.$version $PKG/usr/lib/
 	ln -s libGLESv1_CM_nvidia.so.$version $PKG/usr/lib/libGLESv1_CM_nvidia.so.1
@@ -38,7 +38,7 @@ build() {
 	ln -s libGLESv2_nvidia.so.$version $PKG/usr/lib/libGLESv2_nvidia.so.2
 	install -D -m 0644 10_nvidia.json $PKG/usr/share/glvnd/egl_vendor.d/10_nvidia.json
 
-	# GBM libraries and config
+	# GBM
 
 	install -m 0755 libnvidia-egl-gbm.so.1.1.1 $PKG/usr/lib/
 	ln -s libnvidia-egl-gbm.so.1.1.1 $PKG/usr/lib/libnvidia-egl-gbm.so.1
@@ -47,22 +47,25 @@ build() {
 	install -d -m 0755 $PKG/usr/lib/gbm
 	ln -s libnvidia-allocator.so.$version $PKG/usr/lib/gbm/nvidia-drm_gbm.so
 
-	# GLVND vendor implementation libraries
+	# GLVND
 
 	install -m 0755 libGLX_nvidia.so.$version $PKG/usr/lib/
 	ln -s libGLX_nvidia.so.$version $PKG/usr/lib/libGLX_nvidia.so.0
 	install -m 0755 libEGL_nvidia.so.$version $PKG/usr/lib/
 	ln -s libEGL_nvidia.so.$version $PKG/usr/lib/libEGL_nvidia.so.0
 
-	# vulkan ICD config
+	# Vulkan
 
 	install -D -m 0644 nvidia_icd.json $PKG/usr/share/vulkan/icd.d/nvidia_icd.json
-
-	# vulkan layer config
-
 	install -D -m 0644 nvidia_layers.json $PKG/usr/share/vulkan/implicit_layer.d/nvidia_layers.json
 
-	# driver component libraries
+	# Application profile keys
+	
+	install -d -m 0755 $PKG/usr/share/nvidia
+	install -m 0644 nvidia-application-profiles-$version-rc $PKG/usr/share/nvidia/
+	install -m 0644 nvidia-application-profiles-$version-key-documentation $PKG/usr/share/nvidia/
+
+	# Nvidia drivers
 
 	for C in cfg {e,}glcore gl{si,vkspirv} rtcore allocator; do
 		install -m 0755 libnvidia-${C}.so.$version $PKG/usr/lib/
@@ -70,13 +73,13 @@ build() {
 		ln -s libnvidia-${C}.so.$version $PKG/usr/lib/libnvidia-${C}.so
 	done
 
-	# vendor VDPAU library
+	# Vendor VDPAU
 
 	install -D -m 0755 libvdpau_nvidia.so.$version $PKG/usr/lib/vdpau/libvdpau_nvidia.so.$version
 	ln -s libvdpau_nvidia.so.$version $PKG/usr/lib/vdpau/libvdpau_nvidia.so.1
 	ln -s libvdpau_nvidia.so.$version $PKG/usr/lib/vdpau/libvdpau_nvidia.so
 
-	# CUDA libraries
+	# CUDA
 
 	install -m 0755 libcuda.so.$version $PKG/usr/lib/
 	ln -s libcuda.so.$version $PKG/usr/lib/libcuda.so.1
@@ -87,13 +90,10 @@ build() {
 	install -m 0755 libnvidia-ptxjitcompiler.so.$version $PKG/usr/lib/
 	ln -s libnvidia-ptxjitcompiler.so.$version $PKG/usr/lib/libnvidia-ptxjitcompiler.so.1
 	ln -s libnvidia-ptxjitcompiler.so.$version $PKG/usr/lib/libnvidia-ptxjitcompiler.so
-
-	# CUDA MPI applications
-
 	install -m 0755 nvidia-cuda-mps-control $PKG/usr/bin/
 	install -m 0755 nvidia-cuda-mps-server $PKG/usr/bin/
 
-	# OpenCL libraries and config
+	# OpenCL
 
 	install -m 0755 libOpenCL.so.1.0.0 $PKG/usr/lib/
 	install -m 0755 libnvidia-opencl.so.$version $PKG/usr/lib/
@@ -101,28 +101,21 @@ build() {
 	ln -s libnvidia-opencl.so.$version $PKG/usr/lib/libnvidia-opencl.so
 	install -D -m 0644 nvidia.icd $PKG/etc/OpenCL/vendors/nvidia.icd
 
-	# TLS libraries
+	# TLS
 
 	install -m 0755 libnvidia-tls.so.$version $PKG/usr/lib/
 
-	# Monitoring and management API library
+	# Monitoring and management API
 
 	install -m 0755 libnvidia-ml.so.$version $PKG/usr/lib/
 	ln -s libnvidia-ml.so.$version $PKG/usr/lib/libnvidia-ml.so.1
 	ln -s libnvidia-ml.so.$version $PKG/usr/lib/libnvidia-ml.so
 
-	# Binaries
-
-	install -m 4755 nvidia-modprobe $PKG/usr/bin/
-	install -m 0755 nvidia-{xconfig,settings,smi,debugdump,persistenced,powerd} $PKG/usr/bin/
-	install -D -m 0755 $SRC/nvidia-powerd.rc $PKG/etc/rc.d/nvidia-powerd
-	install -D -m 0755 $SRC/nvidia-persistenced.rc $PKG/etc/rc.d/nvidia-persistenced
-
-	# UI libraries
+	# GTK
 
 	install -m 0755 libnvidia-gtk{2,3}.so.$version $PKG/usr/lib/
 
-	# Encoding/decoding libraries
+	# Encoding/decoding
 
 	install -m 0755 libnvcuvid.so.$version $PKG/usr/lib/
 	ln -s libnvcuvid.so.$version $PKG/usr/lib/libnvcuvid.so.1
@@ -134,31 +127,38 @@ build() {
 	ln -s libnvidia-fbc.so.$version $PKG/usr/lib/libnvidia-fbc.so.1
 	ln -s libnvidia-fbc.so.$version $PKG/usr/lib/libnvidia-fbc.so
 
-	# OptiX ray tracing engine
-
-	install -m 0755 libnvoptix.so.$version $PKG/usr/lib/
-	ln -s libnvoptix.so.$version $PKG/usr/lib/libnvoptix.so.1
-	ln -s libnvoptix.so.$version $PKG/usr/lib/libnvoptix.so
-	install -D -m 0644 nvoptix.bin $PKG/usr/share/nvidia/nvoptix.bin
-
-	# Optical Flow library
+	# Optical Flow
 
 	install -m 0755 libnvidia-opticalflow.so.$version $PKG/usr/lib/
 	ln -s libnvidia-opticalflow.so.$version $PKG/usr/lib/libnvidia-opticalflow.so.1
 	ln -s libnvidia-opticalflow.so.$version $PKG/usr/lib/libnvidia-opticalflow.so
 
-	# NGX library and updater
+	# NGX
 
 	install -m 0755 libnvidia-ngx.so.$version $PKG/usr/lib/
 	ln -s libnvidia-ngx.so.$version $PKG/usr/lib/libnvidia-ngx.so.1
 	ln -s libnvidia-ngx.so.$version $PKG/usr/lib/libnvidia-ngx.so
 	install -m 0755 nvidia-ngx-updater $PKG/usr/bin/
 
-	# gpucomp shader compilation library
+	# Shader compilation
 
 	install -m 0755 libnvidia-gpucomp.so.$version $PKG/usr/lib/
 	ln -s libnvidia-gpucomp.so.$version $PKG/usr/lib/libnvidia-gpucomp.so.1
 	ln -s libnvidia-gpucomp.so.$version $PKG/usr/lib/libnvidia-gpucomp.so
+
+	# Binaries
+
+	install -m 4755 nvidia-modprobe $PKG/usr/bin/
+	install -m 0755 nvidia-{xconfig,settings,smi,debugdump,persistenced,powerd} $PKG/usr/bin/
+	install -D -m 0755 $SRC/nvidia-powerd.rc $PKG/etc/rc.d/nvidia-powerd
+	install -D -m 0755 $SRC/nvidia-persistenced.rc $PKG/etc/rc.d/nvidia-persistenced
+
+	# OptiX ray tracing engine
+
+	install -m 0755 libnvoptix.so.$version $PKG/usr/lib/
+	ln -s libnvoptix.so.$version $PKG/usr/lib/libnvoptix.so.1
+	ln -s libnvoptix.so.$version $PKG/usr/lib/libnvoptix.so
+	install -D -m 0644 nvoptix.bin $PKG/usr/share/nvidia/nvoptix.bin
 
 	# GSP firmware
 
