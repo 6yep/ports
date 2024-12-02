@@ -134,6 +134,8 @@ drwxr-xr-x	root/root	usr/share/glvnd/
 drwxr-xr-x	root/root	usr/share/glvnd/egl_vendor.d/
 -rw-r--r--	root/root	usr/share/glvnd/egl_vendor.d/10_nvidia.json
 drwxr-xr-x	root/root	usr/share/nvidia/
+-rw-r--r--	root/root	usr/share/nvidia/nvidia-application-profiles-550.135-key-documentation
+-rw-r--r--	root/root	usr/share/nvidia/nvidia-application-profiles-550.135-rc
 -rw-r--r--	root/root	usr/share/nvidia/nvoptix.bin
 drwxr-xr-x	root/root	usr/share/vulkan/
 drwxr-xr-x	root/root	usr/share/vulkan/icd.d/
