@@ -11,7 +11,7 @@ source=(https://us.download.nvidia.com/XFree86/Linux-x86_64/$version/NVIDIA-Linu
 	nvidia-powerd.rc \
 	80-nvidia-pm.rules \
 	90-nvidia-uvm.rules \
-	nvidia-modprobe.conf)
+	nvidia-modprobe.d.conf)
 
 build() {
 	sh NVIDIA-Linux-x86_64-$version.run --extract-only
@@ -178,5 +178,5 @@ build() {
 	install -d $PKG/lib/modules/$(uname -r)/extra
 	install -m 0644 *.ko $PKG/lib/modules/$(uname -r)/extra/
 
-	install -D -m 0755 $SRC/nvidia-modprobe.conf $PKG/etc/modprobe.d/nvidia.conf
+	install -D -m 0755 $SRC/nvidia-modprobe.d.conf $PKG/etc/modprobe.d/nvidia.conf
 }
