@@ -1,0 +1,38 @@
+# Description: NVIDIA's GPU programming toolkit
+# URL: https://www.nvidia.com
+# Maintainer: tbsty, tbsty at protonmail dot com
+# Depends on: gdb glu nvidia
+
+name=cuda
+version=12.4.1
+_driverversion=550.54.15
+release=1
+source=(https://developer.download.nvidia.com/compute/cuda/$version/local_installers/cuda_${version}_${_driverversion}_linux.run \
+	cuda-profile.d.sh)
+
+build() {
+	sh ${name}_${version}_${_driverversion}_linux.run \
+		--silent \
+		--toolkit \
+		--toolkitpath=$PKG/usr/local/$name-$version
+
+	ln -s /usr/local/$name-$version $PKG/usr/local/cuda
+
+	install -D -m 0755 $SRC/cuda-profile.d.sh $PKG/etc/profile.d/cuda.sh
+
+	find $PKG/usr/local/$name-$version \( \
+		-name DOCS -o \
+		-name README -o \
+		-name EULA.txt -o \
+		-name Readme.txt -o \
+		-name readme -o \
+		-name changelog -o \
+		-name copyright -o \
+		-name doc -o \
+		-name docs -o \
+		-name documentation -o \
+		-name samples -o \
+		-name example \
+		\) \
+		-exec rm -rf {} +
+}
