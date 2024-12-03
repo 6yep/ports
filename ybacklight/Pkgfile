@@ -1,0 +1,23 @@
+# Description: Adjust backlight brightness using sysfs.
+# URL: https://github.com/daddylongtabs/ybacklight
+# Maintainer: daddylongtabs, daddylongtabs at protonmail dot com
+
+name=ybacklight
+_driver=intel_backlight
+version=2.0
+release=1
+source=(https://github.com/daddylongtabs/${name}/archive/v${version}/${name}-v${version}.tar.gz)
+
+build () {
+	cd $name-$version
+
+	sed -i 's/\(#define CLASS\s*"\)[^"]*"/\1backlight"/' ybacklight.h
+	sed -i 's/\(#define DRIVER\s*"\)[^"]*"/\1intel_backlight"/' ybacklight.h
+
+	export TARGET=$name-${_driver}
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr install
+
+	chmod 4755 $PKG/usr/bin/$TARGET
+}
