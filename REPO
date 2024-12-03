@@ -7,6 +7,7 @@ d:cgroupfs-mount
 d:go
 d:tree
 d:cuda
+d:uthash
 d:lilipod
 d:rxvt-unicode
 d:distrobox
@@ -47,6 +48,9 @@ f:5a459a837ff0e1220dda938190c083f7:cuda/.signature
 f:815aa9902ea74484c319c3d0a55661d9:cuda/.footprint
 f:4d6d4ca3ad7671a47c8b98136b2b1c4a:cuda/post-install
 f:994e239c78d77fef487d4bb3967b5051:cuda/cuda-profile.d.sh
+f:5a3e99711bc226861e077372375cf194:uthash/Pkgfile
+f:1ea09da9567b65740c08af07ee73365e:uthash/.signature
+f:d8abf2591188e6e6a8badd0abe472dca:uthash/.footprint
 f:100b191d37bfaa969bf553cfc0914ce0:lilipod/Pkgfile
 f:5a459a837ff0e1220dda938190c083f7:lilipod/.signature
 f:b3868ee312213bb5318603041d7c06a5:lilipod/.footprint
