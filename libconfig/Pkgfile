@@ -1,0 +1,22 @@
+# Description: C/C++ configuration file library.
+# URL: https://github.com/hyperrealm/libconfig
+# Maintainer: daddylongtabs, daddylongtabs at protonmail dot com
+
+name=libconfig
+version=1.7.3
+release=1
+source=(https://github.com/hyperrealm/libconfig/archive/v$version/$name-v$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	autoreconf -i
+
+ 	./configure \
+		--prefix=/usr \
+		--disable-static \
+		--disable-examples
+
+	make
+	make DESTDIR=$PKG install
+}
