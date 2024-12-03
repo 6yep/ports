@@ -1,6 +1,6 @@
 # Description: SCReenshOT - command line screen capture utility
 # URL: SCReenshOT - command line screen capture utility
-# Maintainer: tbsty, tbsty at protonmail dot com
+# Maintainer: daddylongtabs, daddylongtabs at protonmail dot com
 # Depends on: autoconf-archive imlib2 xorg-libx11 xorg-libxcomposite xorg-libxext xorg-libxfixes xorg-libxinerama
 
 name=scrot

@@ -1,0 +1,9 @@
+#
+# /etc/ports/daddylongtabs.httpup: daddylongtabs's port collection
+#
+
+ROOT_DIR=/usr/ports/daddylongtabs
+URL=https://raw.githubusercontent.com/daddylongtabs/ports/main
+
+# End of file
+

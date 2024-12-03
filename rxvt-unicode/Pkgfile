@@ -1,6 +1,6 @@
 # Description: rxvt fork with unicode and xft support
 # URL: http://software.schmorp.de/pkg/rxvt-unicode.html
-# Maintainer: tbsty, tbsty at protonmail dot com
+# Maintainer: daddylongtabs, daddylongtabs at protonmail dot com
 # Depends on: xorg-libxft xorg-libxpm libptytty
 
 name=rxvt-unicode
