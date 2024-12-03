@@ -1,0 +1,32 @@
+# Description: A lightweight compositor for X11 with animation support 
+# URL: https://picom.app
+# Maintainer: daddylongtabs, daddylongtabs at protonmail dot com
+# Depends on: libconfig libev libpcre2 libxdg-basedir libepoxy libglvnd mesa dbus xorg-libpixman xorg-xcb-util xorg-xcb-util-image xorg-xcb-util-renderutil uthash
+
+name=picom
+version=9.1
+release=1
+source=(https://github.com/yshui/picom/archive/v$version/$name-v$version.tar.gz \
+	picom.1 \
+	picom-trans.1 \
+	picom.conf)
+
+build() {
+	cd $name-$version
+
+	meson setup build \
+		--prefix=/usr \
+		--buildtype=plain \
+		--wrap-mode nodownload \
+		-D b_lto=true \
+		-D b_pie=true
+
+	meson compile -C build -j ${JOBS:-1}
+	DESTDIR=$PKG meson install -C build
+
+	install -D -m 644 $SRC/picom.1 $PKG/usr/share/man/man1/picom.1
+	install -D -m 644 $SRC/picom-trans.1 $PKG/usr/share/man/man1/picom-trans.1
+	install -D -m 644 $SRC/picom.conf $PKG/etc/xdg/picom.conf
+
+	rm -rf $PKG/usr/share/{icons,applications}
+}
