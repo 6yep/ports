@@ -1,6 +1,7 @@
 d:scrot
 d:xdo
 d:ratpoison
+d:ybacklight
 d:slop
 d:cgroupfs-mount
 d:go
@@ -15,7 +16,6 @@ d:glm
 d:docker
 d:nvidia
 d:feh
-d:kbdbacklight
 d:libptytty
 d:lemonbar
 f:20ee25c091ca421a9d698df8fb6594dc:scrot/Pkgfile
@@ -27,6 +27,9 @@ f:be6f016669919c53b11b08e8580abac7:xdo/.footprint
 f:9b5731b2c5ce06643e9601e195866f84:ratpoison/Pkgfile
 f:5a459a837ff0e1220dda938190c083f7:ratpoison/.signature
 f:d68f045eb861f2919258db1887eae5db:ratpoison/.footprint
+f:d6a6dace05eadc0f6b61741c2cbf98cf:ybacklight/Pkgfile
+f:1ea09da9567b65740c08af07ee73365e:ybacklight/.signature
+f:2e1d6a68609406f08863be439b6172b7:ybacklight/.footprint
 f:1a8175f64b111160a8ccfbbcbcd27a4e:slop/Pkgfile
 f:5a459a837ff0e1220dda938190c083f7:slop/.signature
 f:24c9021cc393d601f0e42bf468619a83:slop/.footprint
@@ -80,9 +83,6 @@ f:4967489317e7e1e0871c5c173138dd11:nvidia/nvidia-modprobe.d.conf
 f:47d0b661f5bbdd1b3fd4672848ef9446:feh/Pkgfile
 f:5a459a837ff0e1220dda938190c083f7:feh/.signature
 f:307191851ba9faaf8e7ccdf819a8d6a5:feh/.footprint
-f:62ffaae0e8db286622062013b68df3b4:kbdbacklight/Pkgfile
-f:5a459a837ff0e1220dda938190c083f7:kbdbacklight/.signature
-f:95e1347ffefde4c7994dee532192dc63:kbdbacklight/.footprint
 f:bb7dee3e48281049f9409618a5bb6267:libptytty/Pkgfile
 f:5a459a837ff0e1220dda938190c083f7:libptytty/.signature
 f:00e63ca0ede87b6e76ce1d946677582f:libptytty/.footprint
