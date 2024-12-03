@@ -14,6 +14,7 @@ d:distrobox
 d:grabc
 d:jq
 d:glm
+d:libconfig
 d:docker
 d:nvidia
 d:feh
@@ -70,6 +71,9 @@ f:f8969ac84554eda49420957e2fe8ac76:jq/.footprint
 f:2da6b4cef88f2dfaeb39632a94135389:glm/Pkgfile
 f:5a459a837ff0e1220dda938190c083f7:glm/.signature
 f:9e8c2934eaf0e19ac4f2b7c925c324f7:glm/.footprint
+f:d59ffe3290cb3e15171d677a364b401e:libconfig/Pkgfile
+f:1ea09da9567b65740c08af07ee73365e:libconfig/.signature
+f:bc15519eeb7c0a01e5f7fcd826afb75c:libconfig/.footprint
 f:2a98811e63cbbed5b3b5e2e62085529a:docker/Pkgfile
 f:5a459a837ff0e1220dda938190c083f7:docker/.signature
 f:b34c049df8d46de18ca77b6e0534a658:docker/docker.rc
