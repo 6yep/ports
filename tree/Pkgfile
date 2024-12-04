@@ -1,6 +1,6 @@
 # Description: A recursive directory listing command that produces a depth indented listing of files
 # URL: http://oldmanprogrammer.net/source.php?dir=projects/tree
-# Maintainer: daddylongtabs, daddylongtabs at protonmail dot com
+# Maintainer: daddylonghacks, daddylonghacks at protonmail dot com
 
 name=tree
 version=2.1.3
