@@ -1,0 +1,23 @@
+# Description: Pulseaudio emulation for ALSA
+# URL: https://github.com/i-rinat/apulse
+# Maintainer: daddylonglags, daddylonglags at protonmail dot com
+# Depends on: cmake glib alsa-lib
+
+name=apulse
+version=0.1.13
+release=1
+source=(https://github.com/i-rinat/$name/archive/v$version/$name-v$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	cmake \
+		-Bbuild \
+		-GNinja \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_BUILD_TYPE=Release \
+		-Wno-dev
+
+	cmake --build build
+	DESTDIR=$PKG cmake --install build
+}
