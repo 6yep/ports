@@ -1,6 +1,7 @@
 # Description: a simple OCI container manager
 # URL: https://github.com/89luca89/lilipod
 # Maintainer: daddylonglags, daddylonglags at protonmail dot com
+# Depends on: go
 
 name=lilipod
 version=0.0.3
