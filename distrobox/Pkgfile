@@ -1,7 +1,7 @@
 # Description: use any linux distribution inside your terminal
 # URL: https://distrobox.it
 # Maintainer: daddylonglags, daddylonglags at protonmail dot com
-# Depends on: docker lilipod
+# Depends on: docker
 
 name=distrobox
 version=1.8.0
