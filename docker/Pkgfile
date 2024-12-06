@@ -1,7 +1,7 @@
 # Description: a platform to build, share and run container applications
 # URL: https://docker.com
 # Maintainer: daddylonglags, daddylonglags at protonmail dot com
-# Depends on: libseccomp btrfs-progs git go cgroupfs-mount
+# Depends on: libseccomp btrfs-progs git go 
 
 name=docker
 version=27.3.1
