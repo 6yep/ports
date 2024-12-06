@@ -9,6 +9,8 @@ PID=/var/run/docker.pid
 LOG=/var/log/docker.log
 OPTS="-p $PID -G docker"
 
+# create log file
+
 if [ ! -f $LOG ]; then
     touch $LOG
     chgrp docker $LOG
@@ -17,6 +19,19 @@ fi
 
 case $1 in
 start)
+		# mount mqueue for ipc
+
+		if ! mount | grep -q mqueue; then
+			mkdir -p /dev/mqueue
+			mount -t mqueue none /dev/mqueue
+		fi
+
+		# mount cgroup v2 for resource limits and isolation
+
+		if ! mount | grep -q cgroup2; then
+			mount -t cgroup2 none /sys/fs/cgroup
+		fi
+
 		nohup $SSD --start --pidfile $PID --exec $PROG -- $OPTS > $LOG 2>&1 &
 		;;
 stop)

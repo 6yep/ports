@@ -1,0 +1,25 @@
+To use docker
+
+1. Add your user to the `docker` group
+
+```
+usermod -aG docker <user>
+```
+
+2. Enable cgroup v2 by adding `cgroup_no_v1=all` to your kernel boot
+parameters and reboot
+
+3. (Optional) Configure user namespaces
+
+```
+echo <user>:100000:65536 > /etc/sub{u,g}id
+
+cat > /etc/docker/daemon.json <<EOF
+{
+	...
+ 
+	"userns-remap": "default"
+}
+EOF
+```
+
