@@ -36,6 +36,8 @@ build() {
 
 	PREFIX=$PKG/usr/bin DOCKERCLI_VERSION=${_cliversion} hack/dockerfile/install/install.sh dockercli
 
+	chown root:root $PKG/usr/bin/docker
+
 	# install
 	
 	VERSION=$version hack/make.sh dynbinary
