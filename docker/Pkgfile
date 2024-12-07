@@ -5,6 +5,7 @@
 
 name=docker
 version=27.3.1
+_cliversion=27.3.1
 release=1
 source=($name.rc)
 
@@ -26,10 +27,14 @@ build() {
 
 	mkdir -pv $PKG/usr/bin
 
-	for dep in containerd runc tini dockercli
+	for dep in containerd runc tini
 	do
 		PREFIX=$PKG/usr/bin hack/dockerfile/install/install.sh $dep
 	done
+
+	# install cli
+
+	PREFIX=$PKG/usr/bin DOCKERCLI_VERSION=${_cliversion} hack/dockerfile/install/install.sh dockercli
 
 	# install
 	
