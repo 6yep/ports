@@ -7,7 +7,7 @@ name=docker
 version=27.3.1
 _cliversion=27.3.1
 release=1
-source=($name.rc)
+source=(dockerd.rc)
 
 build() {
 	export GOPATH=$SRC
@@ -44,5 +44,5 @@ build() {
 	install -D -m 0755 bundles/dynbinary-daemon/docker-proxy $PKG/usr/bin/docker-proxy
 
 	install -D -m 0644 contrib/udev/80-$name.rules $PKG/etc/udev/rules.d/80-$name.rules
-	install -D -m 0755 $SRC/$name.rc $PKG/etc/rc.d/$name
+	install -D -m 0755 $SRC/dockerd.rc $PKG/etc/rc.d/dockerd
 }

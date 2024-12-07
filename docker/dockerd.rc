@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# /etc/rc.d/docker: start/stop docker daemon
+# /etc/rc.d/dockerd: start/stop docker daemon
 #
 
 SSD=/sbin/start-stop-daemon
