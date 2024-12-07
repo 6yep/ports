@@ -1,4 +1,5 @@
 d:scrot
+d:docker-bin
 d:xdo
 d:ratpoison
 d:ybacklight
@@ -24,6 +25,12 @@ d:lemonbar
 f:3cf4d6a84ca2c5c72227a4c8c21eaba4:scrot/Pkgfile
 f:c1f2cca11ed15954bafb9d9deda79ce8:scrot/.signature
 f:937cf19b3766d2454a8631265add3e6d:scrot/.footprint
+f:9989474b0695eff0e5b0fae4f73b4fc5:docker-bin/Pkgfile
+f:c1f2cca11ed15954bafb9d9deda79ce8:docker-bin/.signature
+f:ae5b60b43eeda9c89b9fb3a090bbda43:docker-bin/dockerd.rc
+f:2433ccdb7a5aa54faa300f39d8946a5d:docker-bin/.footprint
+f:8261569581474c8f27f1e930c5e22e59:docker-bin/pre-install
+f:1f42e074c3053b24395adb74203ff53d:docker-bin/README
 f:8608329c2934101c058900a045ae49b2:xdo/Pkgfile
 f:c1f2cca11ed15954bafb9d9deda79ce8:xdo/.signature
 f:be6f016669919c53b11b08e8580abac7:xdo/.footprint
