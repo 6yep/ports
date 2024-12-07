@@ -88,7 +88,7 @@ f:500f0192c86a86fae5cc564e87c6e7b5:apulse/.footprint
 f:bc199089b452c40a4457498440341195:libconfig/Pkgfile
 f:c1f2cca11ed15954bafb9d9deda79ce8:libconfig/.signature
 f:bc15519eeb7c0a01e5f7fcd826afb75c:libconfig/.footprint
-f:fb20e56e4ddcebd82a3a878679bd120a:docker/Pkgfile
+f:3fadc64f349f5a4371ec4b18d77852cf:docker/Pkgfile
 f:c1f2cca11ed15954bafb9d9deda79ce8:docker/.signature
 f:870396a0cfe22da9642dcbce17580b5f:docker/docker.rc
 f:43b23869a150e04e1e68c97985a4bf77:docker/.footprint
