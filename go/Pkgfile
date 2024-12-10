@@ -1,6 +1,6 @@
 # Description: The Go Programming Language
 # URL: https://go.dev/
-# Maintainer: daddylonglags, daddylonglags at protonmail dot com
+# Maintainer: bifrons, bifrons at protonmail dot com
 
 name=go
 version=1.23.2

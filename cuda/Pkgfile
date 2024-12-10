@@ -1,6 +1,6 @@
 # Description: NVIDIA's GPU programming toolkit
 # URL: https://www.nvidia.com
-# Maintainer: daddylonglags, daddylonglags at protonmail dot com
+# Maintainer: bifrons, bifrons at protonmail dot com
 # Depends on: gdb glu nvidia
 
 name=cuda

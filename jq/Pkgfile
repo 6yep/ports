@@ -1,6 +1,6 @@
 # Description: Lightweight and flexible command-line JSON processor
 # URL: https://stedolan.github.io/jq/
-# Maintainer: daddylonglags, daddylonglags at protonmail dot com
+# Maintainer: bifrons, bifrons at protonmail dot com
 # Depends on: oniguruma
 
 name=jq

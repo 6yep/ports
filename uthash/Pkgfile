@@ -1,6 +1,6 @@
 # Description: C preprocessor implementations of a hash table and a linked list
 # URL: http://troydhanson.github.io/uthash/index.html
-# Maintainer: daddylonglags, daddylonglags at protonmail dot com
+# Maintainer: bifrons, bifrons at protonmail dot com
 
 name=uthash
 version=2.1.0

@@ -1,6 +1,6 @@
 # Description: Pulseaudio emulation for ALSA
 # URL: https://github.com/i-rinat/apulse
-# Maintainer: daddylonglags, daddylonglags at protonmail dot com
+# Maintainer: bifrons, bifrons at protonmail dot com
 # Depends on: cmake glib alsa-lib
 
 name=apulse

@@ -1,6 +1,6 @@
 # Description: A fast and light image viewer
 # URL: https://feh.finalrewind.org/
-# Maintainer: daddylonglags, daddylonglags at protonmail dot com
+# Maintainer: bifrons, bifrons at protonmail dot com
 # Depends on: imlib2 xorg-libxinerama xorg-libxt
 
 name=feh
