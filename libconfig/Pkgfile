@@ -1,6 +1,6 @@
 # Description: C/C++ configuration file library.
 # URL: https://github.com/hyperrealm/libconfig
-# Maintainer: bifrons, bifrons at protonmail dot com
+# Maintainer: 6yep, 6yep at proton dot me
 
 name=libconfig
 version=1.7.3

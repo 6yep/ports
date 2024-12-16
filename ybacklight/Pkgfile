@@ -1,12 +1,12 @@
 # Description: Adjust backlight brightness using sysfs.
-# URL: https://github.com/bifrons/ybacklight
-# Maintainer: bifrons, bifrons at protonmail dot com
+# URL: https://github.com/6yep/ybacklight
+# Maintainer: 6yep, 6yep at proton dot me
 
 name=ybacklight
 _driver=intel_backlight
 version=2.0
 release=1
-source=(https://github.com/bifrons/${name}/archive/v${version}/${name}-v${version}.tar.gz)
+source=(https://github.com/6yep/${name}/archive/v${version}/${name}-v${version}.tar.gz)
 
 build () {
 	cd $name-$version

@@ -1,6 +1,6 @@
 # Description: use any linux distribution inside your terminal
 # URL: https://distrobox.it
-# Maintainer: bifrons, bifrons at protonmail dot com
+# Maintainer: 6yep, 6yep at proton dot me
 # Depends on: lilipod
 
 name=distrobox

@@ -1,6 +1,6 @@
 # Description: NVIDIA Linux Display Driver
 # URL: https://www.nvidia.com
-# Maintainer: bifrons, bifrons at protonmail dot com
+# Maintainer: 6yep, 6yep at proton dot me
 # Depends on: gtk gtk3 libglvnd
 
 name=nvidia

@@ -1,6 +1,6 @@
 # Description: A lightweight compositor for X11 with animation support 
 # URL: https://picom.app
-# Maintainer: bifrons, bifrons at protonmail dot com
+# Maintainer: 6yep, 6yep at proton dot me
 # Depends on: libconfig libev libpcre2 libxdg-basedir libepoxy libglvnd mesa dbus xorg-libpixman xorg-xcb-util xorg-xcb-util-image xorg-xcb-util-renderutil uthash
 
 name=picom

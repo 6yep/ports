@@ -1,6 +1,6 @@
 # Description: a platform to build, share and run container applications
 # URL: https://docker.com
-# Maintainer: bifrons, bifrons at protonmail dot com
+# Maintainer: 6yep, 6yep at proton dot me
 # Depends on: libseccomp btrfs-progs git go 
 
 name=docker

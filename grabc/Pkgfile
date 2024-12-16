@@ -1,6 +1,6 @@
 # Description: A command line tool to identify a pixel color on an X window.
 # URL: https://github.com/muquit/grabc
-# Maintainer: bifrons, bifrons at protonmail dot com
+# Maintainer: 6yep, 6yep at proton dot me
 # Depends on: xorg-libx11
 
 name=grabc
