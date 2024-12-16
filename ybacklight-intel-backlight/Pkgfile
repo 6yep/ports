@@ -1,20 +1,19 @@
-# Description: Adjust backlight brightness using sysfs.
+# Description: Adjust backlight brightness using sysfs (intel backlight driver)
 # URL: https://github.com/6yep/ybacklight
 # Maintainer: 6yep, 6yep at proton dot me
 
-name=ybacklight
-_driver=intel_backlight
+name=ybacklight-intel-backlight
 version=2.0
 release=1
-source=(https://github.com/6yep/${name}/archive/v${version}/${name}-v${version}.tar.gz)
+source=(https://github.com/6yep/ybacklight/archive/v${version}/ybacklight-v${version}.tar.gz)
 
 build () {
-	cd $name-$version
+	cd ybacklight-$version
 
 	sed -i 's/\(#define CLASS\s*"\)[^"]*"/\1backlight"/' ybacklight.h
 	sed -i 's/\(#define DRIVER\s*"\)[^"]*"/\1intel_backlight"/' ybacklight.h
 
-	export TARGET=$name-${_driver}
+	export TARGET=ybacklight-display
 
 	make
 	make DESTDIR=$PKG PREFIX=/usr install

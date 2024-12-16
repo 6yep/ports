@@ -1,0 +1,22 @@
+# Description: Adjust backlight brightness using sysfs (apple smc driver)
+# URL: https://github.com/6yep/ybacklight
+# Maintainer: 6yep, 6yep at proton dot me
+
+name=ybacklight-apple-smc
+version=2.0
+release=1
+source=(https://github.com/6yep/ybacklight/archive/v${version}/ybacklight-v${version}.tar.gz)
+
+build () {
+	cd ybacklight-$version
+
+	sed -i 's/\(#define CLASS\s*"\)[^"]*"/\1leds"/' ybacklight.h
+	sed -i 's/\(#define DRIVER\s*"\)[^"]*"/\1smc::kbd_backlight"/' ybacklight.h
+
+	export TARGET=ybacklight-keyboard
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr install
+
+	chmod 4755 $PKG/usr/bin/$TARGET
+}
