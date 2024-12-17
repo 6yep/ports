@@ -1,0 +1,23 @@
+# Description: st is a simple terminal implementation for X.
+# URL: https://st.suckless.org/
+# Maintainer: 6yep, 6yep at proton dot me
+# Depends on: fontconfig freetype xorg-libx11 xorg-libxft xorg-libxext
+
+name=st
+version=0.9.2
+release=1
+source=(http://dl.suckless.org/st/$name-$version.tar.gz \
+	https://st.suckless.org/patches/bold-is-not-bright/st-bold-is-not-bright-20190127-3be4cf1.diff \
+	https://st.suckless.org/patches/anysize/st-expected-anysize-0.9.diff)
+
+build() {
+	cd $name-$version
+
+	for patch in $SRC/*.diff; do
+		echo "Applying $patch"
+		patch -Np1 < $patch || { echo "Failed to apply $patch"; exit 1; }
+	done
+
+	make CC="${CC:-cc}" X11INC=/usr/include/X11 X11LIB=/usr/lib/X11
+	make PREFIX=/usr DESTDIR=$PKG TERMINFO=$PKG/usr/share/terminfo install
+}
