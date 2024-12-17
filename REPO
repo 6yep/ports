@@ -21,7 +21,8 @@ d:ratpoison
 f:9822832897683c4d323e08420fc930ba:libconfig/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:libconfig/.signature
 f:bc15519eeb7c0a01e5f7fcd826afb75c:libconfig/.footprint
-f:6e63c18d8a99cf41089bba90a6443994:st/Pkgfile
+f:61ae7c08b2869e67994166698f7a50b6:st/st-colorscheme-acme.diff
+f:79609e49b3aa57c5bffc878d41fb3ed4:st/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:st/.signature
 f:b1ffe1e6a17963e7c7113a5c9a9f8041:st/.footprint
 f:6d52abe90c07b6d60d18b3f51c5837b6:picom/Pkgfile
