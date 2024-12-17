@@ -11,6 +11,7 @@ d:apulse
 d:uthash
 d:ybacklight-apple-smc
 d:scrot
+d:farbfeld
 d:cuda
 d:rxvt-unicode
 d:nvidia
@@ -65,6 +66,9 @@ f:8f0cbb9717071c719352ab60a4c76963:ybacklight-apple-smc/.footprint
 f:9d95aa99d4203d0cabf4b22c0cc527dc:scrot/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:scrot/.signature
 f:937cf19b3766d2454a8631265add3e6d:scrot/.footprint
+f:893b33079b8322a53b7017ca85adc0c3:farbfeld/Pkgfile
+f:76f7311ed77a0191086a1cae24082210:farbfeld/.signature
+f:941a18e7379204d7e8d66562ebaa431a:farbfeld/.footprint
 f:392d87d21f6a543464dc32d7a38fdb6f:cuda/Pkgfile
 f:4d6d4ca3ad7671a47c8b98136b2b1c4a:cuda/post-install
 f:76f7311ed77a0191086a1cae24082210:cuda/.signature
