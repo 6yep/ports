@@ -1,0 +1,16 @@
+# Description: Python Imaging Library (PIL)
+# URL: https://python-pillow.org/
+# Maintainer: 6yep, 6yep at proton dot me
+# Depends on: python3-setuptools lcms2 libtiff libwebp xorg-libxcb libraqm
+
+name=python3-pillow
+version=11.0.0
+release=1
+source=(https://github.com/python-pillow/Pillow/archive/$version/$name-$version.tar.gz)
+
+build() {
+  cd Pillow-$version
+
+  python3 setup.py build
+  python3 setup.py install --root=$PKG --optimize=1 --skip-build
+}
