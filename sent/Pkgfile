@@ -6,9 +6,16 @@
 name=sent
 version=1
 release=1
-source=(https://dl.suckless.org/tools/$name-$version.tar.gz)
+source=(https://dl.suckless.org/tools/$name-$version.tar.gz \
+	https://tools.suckless.org/sent/patches/progress-bar/sent-progress-bar-1.0.diff \
+	https://tools.suckless.org/sent/patches/cmdline_options/sent-options-20190213-72d33d4.diff)
 
 build() {
+	for patch in $SRC/*.diff; do
+		echo "Applying $patch"
+		patch -Np1 < $patch || { echo "Failed to apply $patch"; exit 1; }
+	done
+
 	make
 	make PREFIX=/usr DESTDIR=$PKG install
 }
