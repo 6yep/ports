@@ -6,7 +6,6 @@ d:grabc
 d:jq
 d:docker
 d:sent
-d:libptytty
 d:ybacklight-intel-backlight
 d:apulse
 d:uthash
@@ -14,10 +13,10 @@ d:ybacklight-apple-smc
 d:scrot
 d:farbfeld
 d:cuda
-d:rxvt-unicode
 d:nvidia
 d:tree
 d:go
+d:xdo
 d:feh
 d:ratpoison
 f:9822832897683c4d323e08420fc930ba:libconfig/Pkgfile
@@ -52,9 +51,6 @@ f:8261569581474c8f27f1e930c5e22e59:docker/pre-install
 f:e82e5d680cd40a1ea1705650bb24c0bb:sent/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:sent/.signature
 f:07539d34460e6b24dea60b651f7010c0:sent/.footprint
-f:008fee1408208909ac2ad675a85ccc3f:libptytty/Pkgfile
-f:76f7311ed77a0191086a1cae24082210:libptytty/.signature
-f:00e63ca0ede87b6e76ce1d946677582f:libptytty/.footprint
 f:35c5e2c1db9d051177864e1c2e875773:ybacklight-intel-backlight/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:ybacklight-intel-backlight/.signature
 f:ff1c0b475cbd88432978c01b881d0d80:ybacklight-intel-backlight/.footprint
@@ -78,9 +74,6 @@ f:4d6d4ca3ad7671a47c8b98136b2b1c4a:cuda/post-install
 f:76f7311ed77a0191086a1cae24082210:cuda/.signature
 f:815aa9902ea74484c319c3d0a55661d9:cuda/.footprint
 f:994e239c78d77fef487d4bb3967b5051:cuda/cuda-profile.d.sh
-f:1036445e5d04d35ec3a52bd4f3525a42:rxvt-unicode/Pkgfile
-f:76f7311ed77a0191086a1cae24082210:rxvt-unicode/.signature
-f:adbc706ffaae32ebc5d2669e47231c20:rxvt-unicode/.footprint
 f:4836dc7d4ae1160195c620d76d3ff84d:nvidia/Pkgfile
 f:9039b819cb09373c7ba1767514529f58:nvidia/nvidia-powerd.rc
 f:4875e4b2dcc52fb780fb9a65785cd08d:nvidia/80-nvidia-pm.rules
@@ -96,6 +89,9 @@ f:2f0c4df3aa5b2a6976c413f8a505fa6b:tree/.footprint
 f:887fff33d9077ad2c4be3236227045ad:go/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:go/.signature
 f:1c49e3034e07ed134c5d9532dc57b0ea:go/.footprint
+f:8608329c2934101c058900a045ae49b2:xdo/Pkgfile
+f:c1f2cca11ed15954bafb9d9deda79ce8:xdo/.signature
+f:be6f016669919c53b11b08e8580abac7:xdo/.footprint
 f:4a5e45a76ab95d89522850da0cab01b8:feh/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:feh/.signature
 f:307191851ba9faaf8e7ccdf819a8d6a5:feh/.footprint
