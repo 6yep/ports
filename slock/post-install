@@ -1,0 +1,6 @@
+#!/bin/sh
+
+if [ -z "`getent group nogroup`" ]; then
+	/usr/sbin/groupadd --system nogroup
+fi
+
