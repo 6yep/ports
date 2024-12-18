@@ -49,7 +49,7 @@ f:0891d2bd9d2fc7c9435db32f5aab4567:docker/dockerd.rc
 f:76f7311ed77a0191086a1cae24082210:docker/.signature
 f:8c769e815bda47868ffe48e52898a653:docker/.footprint
 f:8261569581474c8f27f1e930c5e22e59:docker/pre-install
-f:f7ab3a10e480cf3527a2758280037841:sent/Pkgfile
+f:e82e5d680cd40a1ea1705650bb24c0bb:sent/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:sent/.signature
 f:07539d34460e6b24dea60b651f7010c0:sent/.footprint
 f:008fee1408208909ac2ad675a85ccc3f:libptytty/Pkgfile
