@@ -3,10 +3,12 @@ d:st
 d:picom
 d:distrobox
 d:grabc
+d:python3-pillow
 d:jq
 d:docker
 d:sent
 d:ybacklight-intel-backlight
+d:img2pdf
 d:apulse
 d:uthash
 d:ybacklight-apple-smc
@@ -18,6 +20,7 @@ d:tree
 d:go
 d:xdo
 d:feh
+d:libraqm
 d:ratpoison
 f:9822832897683c4d323e08420fc930ba:libconfig/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:libconfig/.signature
@@ -39,6 +42,9 @@ f:330b81a26cbc4e403fe789565ebc9aef:distrobox/.footprint
 f:9b0fc67e09deba6f7aa8968a50d83669:grabc/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:grabc/.signature
 f:50385407f45563043b51ecf7dedad469:grabc/.footprint
+f:c49f3147c36c9e5dca11563f3bc23ef7:python3-pillow/Pkgfile
+f:76f7311ed77a0191086a1cae24082210:python3-pillow/.signature
+f:0ae54acecd45176d965750c1bfb2078b:python3-pillow/.footprint
 f:eccda91b5f65b3e6fd7c713e42f20cf9:jq/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:jq/.signature
 f:f8969ac84554eda49420957e2fe8ac76:jq/.footprint
@@ -54,6 +60,9 @@ f:07539d34460e6b24dea60b651f7010c0:sent/.footprint
 f:35c5e2c1db9d051177864e1c2e875773:ybacklight-intel-backlight/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:ybacklight-intel-backlight/.signature
 f:ff1c0b475cbd88432978c01b881d0d80:ybacklight-intel-backlight/.footprint
+f:16eb1e480a3c20cb0a357e1a34438e7a:img2pdf/Pkgfile
+f:76f7311ed77a0191086a1cae24082210:img2pdf/.signature
+f:db9257261759ae7dd6a7905766b350da:img2pdf/.footprint
 f:54d10d45abfb752313604a0d330beade:apulse/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:apulse/.signature
 f:500f0192c86a86fae5cc564e87c6e7b5:apulse/.footprint
@@ -95,6 +104,9 @@ f:be6f016669919c53b11b08e8580abac7:xdo/.footprint
 f:4a5e45a76ab95d89522850da0cab01b8:feh/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:feh/.signature
 f:307191851ba9faaf8e7ccdf819a8d6a5:feh/.footprint
+f:82808d8fee3647fcd41c4a3d19173121:libraqm/Pkgfile
+f:76f7311ed77a0191086a1cae24082210:libraqm/.signature
+f:7dc183beb1fea7667f6e0c7e35570344:libraqm/.footprint
 f:e0c16f92139e5585d6492aeb49aa21e7:ratpoison/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:ratpoison/.signature
 f:d68f045eb861f2919258db1887eae5db:ratpoison/.footprint
