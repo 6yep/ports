@@ -109,6 +109,7 @@ f:82808d8fee3647fcd41c4a3d19173121:libraqm/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:libraqm/.signature
 f:7dc183beb1fea7667f6e0c7e35570344:libraqm/.footprint
 f:a667117a6148d0aefc969d15d4c6a782:slock/Pkgfile
+f:5e74659a10a8aa5167b822cea2cca1d9:slock/post-install
 f:76f7311ed77a0191086a1cae24082210:slock/.signature
 f:84f82db5b19e3e1649e1154db63cce5c:slock/.footprint
 f:e0c16f92139e5585d6492aeb49aa21e7:ratpoison/Pkgfile
