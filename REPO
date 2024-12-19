@@ -24,6 +24,7 @@ d:sassc
 d:rust-bin
 d:libraqm
 d:slock
+d:libsoup3
 d:ratpoison
 d:libsass
 f:9822832897683c4d323e08420fc930ba:libconfig/Pkgfile
@@ -124,6 +125,9 @@ f:a667117a6148d0aefc969d15d4c6a782:slock/Pkgfile
 f:5e74659a10a8aa5167b822cea2cca1d9:slock/post-install
 f:76f7311ed77a0191086a1cae24082210:slock/.signature
 f:84f82db5b19e3e1649e1154db63cce5c:slock/.footprint
+f:7da08299d1a6da71bf528a3f142f679c:libsoup3/Pkgfile
+f:76f7311ed77a0191086a1cae24082210:libsoup3/.signature
+f:ed00f20422dfa2ad4d14755956ad853a:libsoup3/.footprint
 f:e0c16f92139e5585d6492aeb49aa21e7:ratpoison/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:ratpoison/.signature
 f:d68f045eb861f2919258db1887eae5db:ratpoison/.footprint
