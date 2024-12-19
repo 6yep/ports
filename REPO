@@ -107,6 +107,7 @@ f:4a5e45a76ab95d89522850da0cab01b8:feh/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:feh/.signature
 f:307191851ba9faaf8e7ccdf819a8d6a5:feh/.footprint
 f:dfcf346562fe0889f5df78dbe9b9d38e:rust-bin/Pkgfile
+f:b7cd2652574774b01ab22744a3d95595:rust-bin/README
 f:b3da418611fb40cec7ceff67db94dd88:rust-bin/post-install
 f:76f7311ed77a0191086a1cae24082210:rust-bin/.signature
 f:c6735cd4cf896cf3c9a1faacef561f15:rust-bin/.footprint
