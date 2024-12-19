@@ -20,6 +20,8 @@ d:tree
 d:go
 d:xdo
 d:feh
+d:rust-bin
+d:surf
 d:libraqm
 d:slock
 d:ratpoison
@@ -105,6 +107,11 @@ f:be6f016669919c53b11b08e8580abac7:xdo/.footprint
 f:4a5e45a76ab95d89522850da0cab01b8:feh/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:feh/.signature
 f:307191851ba9faaf8e7ccdf819a8d6a5:feh/.footprint
+f:60a7f8d4390c69a5516d2818b7c180ce:rust-bin/Pkgfile
+f:76f7311ed77a0191086a1cae24082210:rust-bin/.signature
+f:4424f1ca6e2ad524c61befd795b75b14:rust-bin/.footprint
+f:6406369a4fb8ca84a810debe9813f1eb:surf/Pkgfile
+f:6688b4865322e0af93ee04a014a2a766:surf/config.h
 f:82808d8fee3647fcd41c4a3d19173121:libraqm/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:libraqm/.signature
 f:7dc183beb1fea7667f6e0c7e35570344:libraqm/.footprint
