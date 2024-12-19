@@ -1,0 +1,5 @@
+#!/bin/sh
+
+. /usr/local/cargo/env
+
+/usr/local/cargo/bin/rustup default stable
