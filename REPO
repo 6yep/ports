@@ -20,10 +20,12 @@ d:tree
 d:go
 d:xdo
 d:feh
+d:sassc
 d:rust-bin
 d:libraqm
 d:slock
 d:ratpoison
+d:libsass
 f:9822832897683c4d323e08420fc930ba:libconfig/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:libconfig/.signature
 f:bc15519eeb7c0a01e5f7fcd826afb75c:libconfig/.footprint
@@ -106,6 +108,9 @@ f:be6f016669919c53b11b08e8580abac7:xdo/.footprint
 f:4a5e45a76ab95d89522850da0cab01b8:feh/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:feh/.signature
 f:307191851ba9faaf8e7ccdf819a8d6a5:feh/.footprint
+f:cfba97703d54033e4df87c07821683dd:sassc/Pkgfile
+f:76f7311ed77a0191086a1cae24082210:sassc/.signature
+f:9c54e647eadb86c2ca42143664d9ef26:sassc/.footprint
 f:dfcf346562fe0889f5df78dbe9b9d38e:rust-bin/Pkgfile
 f:b7cd2652574774b01ab22744a3d95595:rust-bin/README
 f:b3da418611fb40cec7ceff67db94dd88:rust-bin/post-install
@@ -122,3 +127,6 @@ f:84f82db5b19e3e1649e1154db63cce5c:slock/.footprint
 f:e0c16f92139e5585d6492aeb49aa21e7:ratpoison/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:ratpoison/.signature
 f:d68f045eb861f2919258db1887eae5db:ratpoison/.footprint
+f:b20b0ab72777f0a050256ad21a5bfdb4:libsass/Pkgfile
+f:76f7311ed77a0191086a1cae24082210:libsass/.signature
+f:a21d7d697fbb3a29e24433eb183731c7:libsass/.footprint
