@@ -1,0 +1,7 @@
+When building ports as an unprivileged user make sure to also set the
+default toolchain for that user to ensure `rustc` works in the context of
+package builds.
+
+e. g. when building ports as the `pkgmk` user run:
+
+`sudo -H -u pkgmk rustup default stable`
