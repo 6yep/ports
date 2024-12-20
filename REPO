@@ -19,6 +19,7 @@ d:farbfeld
 d:cuda
 d:nvidia
 d:tree
+d:gcr
 d:go
 d:xdo
 d:feh
@@ -110,6 +111,9 @@ f:4511024cc556d0c6e7c467b6789524e2:nvidia/90-nvidia-uvm.rules
 f:ff7c78677ec8fae50394b691faafbe36:tree/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:tree/.signature
 f:2f0c4df3aa5b2a6976c413f8a505fa6b:tree/.footprint
+f:a0d5a3bc68a77eec1f0d2e7ce2dc1be9:gcr/Pkgfile
+f:76f7311ed77a0191086a1cae24082210:gcr/.signature
+f:9d41468939ae6f5c795382d803135285:gcr/.footprint
 f:887fff33d9077ad2c4be3236227045ad:go/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:go/.signature
 f:1c49e3034e07ed134c5d9532dc57b0ea:go/.footprint
