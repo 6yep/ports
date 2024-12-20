@@ -1,3 +1,4 @@
+d:docbook-xslt
 d:libconfig
 d:st
 d:picom
@@ -12,6 +13,7 @@ d:img2pdf
 d:apulse
 d:uthash
 d:ybacklight-apple-smc
+d:xdg-dbus-proxy
 d:scrot
 d:farbfeld
 d:cuda
@@ -27,6 +29,11 @@ d:slock
 d:libsoup3
 d:ratpoison
 d:libsass
+f:bb7c116170fe782c22c6c0db71026b10:docbook-xslt/Pkgfile
+f:4cb5c9bc0e39516921f56f57301341b0:docbook-xslt/non-recursive-string-subst.patch
+f:982b83fba40718a31fabaea369b37d57:docbook-xslt/post-install
+f:76f7311ed77a0191086a1cae24082210:docbook-xslt/.signature
+f:d9795a0ed5d14d009bf9f133bf91b0ef:docbook-xslt/.footprint
 f:9822832897683c4d323e08420fc930ba:libconfig/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:libconfig/.signature
 f:bc15519eeb7c0a01e5f7fcd826afb75c:libconfig/.footprint
@@ -77,6 +84,9 @@ f:d8abf2591188e6e6a8badd0abe472dca:uthash/.footprint
 f:92dbf601c9140014ab65d7d4e18bd42c:ybacklight-apple-smc/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:ybacklight-apple-smc/.signature
 f:8f0cbb9717071c719352ab60a4c76963:ybacklight-apple-smc/.footprint
+f:b962261cb7757a8a8c44b88e689eb4f7:xdg-dbus-proxy/Pkgfile
+f:76f7311ed77a0191086a1cae24082210:xdg-dbus-proxy/.signature
+f:25c63b3776e79406e39b06d5f96c17fd:xdg-dbus-proxy/.footprint
 f:9d95aa99d4203d0cabf4b22c0cc527dc:scrot/Pkgfile
 f:76f7311ed77a0191086a1cae24082210:scrot/.signature
 f:937cf19b3766d2454a8631265add3e6d:scrot/.footprint
